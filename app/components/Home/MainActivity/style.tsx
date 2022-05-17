@@ -1,4 +1,4 @@
-import { DefaultInnerContainer } from 'components/InnerContainer/style';
+import { DefaultInnerContainer } from 'components/Container/style';
 import styled from 'styled-components';
 
 export const MainActivityWrapper = styled.section`
@@ -6,11 +6,7 @@ export const MainActivityWrapper = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 100px 40px;
-
-  @media ${({ theme }) => theme.media.tablet} {
-    padding: 50px 40px;
-  }
+  padding: 50px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
     padding: 25px 20px;

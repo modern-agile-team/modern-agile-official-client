@@ -1,4 +1,4 @@
-import { DefaultInnerContainer } from 'components/InnerContainer/style';
+import { DefaultInnerContainer } from 'components/Container/style';
 import styled from 'styled-components';
 
 export const MainValuesWrapper = styled.section`
@@ -60,6 +60,7 @@ export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.main};
   border-radius: 6px;
   margin-bottom: 50px;
+  text-align: center;
 
   @media ${({ theme }) => theme.media.tablet} {
     font-size: 2rem;

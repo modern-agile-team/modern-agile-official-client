@@ -40,7 +40,7 @@ const MainActivity = () => {
 
     observer.observe(cachedRef);
     return () => observer.unobserve(cachedRef);
-  }, [ref.current, onIntersect]);
+  }, [onIntersect]);
 
   return (
     <MainActivityWrapper ref={ref}>

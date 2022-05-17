@@ -27,6 +27,10 @@ const MainApplication = dynamic(
   }
 );
 
+const MainFAQ = dynamic(() => import('components/Home/MainFAQ'), {
+  ssr: false,
+});
+
 const Home: NextPage = () => {
   return (
     <>
@@ -39,6 +43,7 @@ const Home: NextPage = () => {
       <MainEmployment />
       <MainActivity />
       <MainApplication />
+      <MainFAQ />
     </>
   );
 };

@@ -5,6 +5,7 @@ declare module 'styled-components' {
     colors: {
       main: string;
       sub: string;
+      light: string;
     };
     media: {
       mobile1: string;

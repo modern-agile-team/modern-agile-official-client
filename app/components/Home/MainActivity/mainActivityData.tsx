@@ -31,7 +31,7 @@ export const mainActivityData = [
     alt: '로켓',
     contentElement: (
       <p>
-        동아리 내에서 진행하는 테크톡, 멘토/멘토링 시스템, 동아리 커뮤니티를
+        동아리 내에서 진행하는 테크톡, 멘토/멘티 시스템, 동아리 커뮤니티를
         기반으로
         <span> 로켓 성장</span> 할 수 있는 기반을 다집니다.
       </p>

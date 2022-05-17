@@ -4,10 +4,14 @@ import type { AppProps } from 'next/app';
 import GlobalStyle from 'styles/globalStyles';
 import { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme';
-import Layout from 'components/Layout';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import dynamic from 'next/dynamic';
+
+const Layout = dynamic(() => import('components/Layout'), {
+  ssr: true,
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

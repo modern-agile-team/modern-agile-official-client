@@ -14,8 +14,7 @@ const MainApplication = () => {
         <img src={logo} alt="모던애자일 로고" />
         <p>
           모던 애자일이 추구하는 <span>가치와 방향성</span>을 <span>공감</span>
-          하고 <br />
-          함께 <span>성장</span>하고 싶은 사람을 찾습니다.
+          하고 함께 <span>성장</span>하고 싶은 사람을 찾습니다.
         </p>
         <ButtonContainer>
           <Button.Link

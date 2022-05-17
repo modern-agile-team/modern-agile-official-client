@@ -1,4 +1,4 @@
-import { DefaultInnerContainer } from 'components/InnerContainer/style';
+import { DefaultInnerContainer } from 'components/Container/style';
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`

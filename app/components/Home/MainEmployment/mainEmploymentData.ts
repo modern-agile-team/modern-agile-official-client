@@ -2,7 +2,7 @@ export const mainEmploymentData = [
   {
     id: 1,
     title: 'Korbit (코빗)',
-    desc: '(핀테크) 국내 주요 4대 가상 화폐 거래 플랫폼 - 1기',
+    desc: '(핀테크) 국내 주요 4대 가상 화폐 거래 플랫폼',
   },
   {
     id: 2,

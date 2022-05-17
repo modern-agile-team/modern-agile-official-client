@@ -1,3 +1,4 @@
+import { DefaultInnerContainer } from 'components/Container/style';
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
@@ -44,6 +45,10 @@ export const HeaderWrapper = styled.header`
   svg {
     cursor: pointer;
     display: none;
+
+    &.close {
+      width: 18px;
+    }
   }
 
   @media ${({ theme }) => theme.media.tablet} {
@@ -59,7 +64,14 @@ export const HeaderWrapper = styled.header`
   }
 `;
 
-export const LogoContainer = styled.div`
+export const InnerContainer = styled(DefaultInnerContainer)`
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0 30px;
+`;
+
+export const MainLogoContainer = styled.div`
   display: flex;
   align-items: center;
 

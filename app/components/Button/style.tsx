@@ -28,6 +28,6 @@ export const StyledLinkButton = styled.a<{ variant: string }>`
 
   &:hover {
     background-color: ${({ variant, theme }) =>
-      variant === 'primary' ? `${theme.colors.main}` : '#e4e4e4'};
+      variant === 'primary' ? `${theme.colors.light}` : '#e4e4e4'};
   }
 `;

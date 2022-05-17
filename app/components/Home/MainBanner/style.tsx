@@ -2,16 +2,20 @@ import styled from 'styled-components';
 
 export const MainBannerWrapper = styled.section`
   width: 100%;
-  height: 100vh;
+  padding: 115px 0;
   background-color: ${({ theme }) => theme.colors.main};
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media ${({ theme }) => theme.media.mobile1} {
+    padding: 60px 0;
+  }
 `;
 
 export const BannerTitleContainer = styled.div`
-  padding: 200px 0 50px 0;
+  padding: 180px 0 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +42,7 @@ export const BannerTitleContainer = styled.div`
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 200px 0 50px 0;
+    padding: 150px 0 50px 0;
     h1 {
       font-size: 3rem;
     }

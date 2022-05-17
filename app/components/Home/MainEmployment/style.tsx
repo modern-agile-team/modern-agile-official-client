@@ -1,4 +1,4 @@
-import { DefaultInnerContainer } from 'components/InnerContainer/style';
+import { DefaultInnerContainer } from 'components/Container/style';
 import styled from 'styled-components';
 
 export const MainEmploymentWrapper = styled.section`
@@ -16,7 +16,6 @@ export const InnerContainer = styled(DefaultInnerContainer)`
   background-color: ${({ theme }) => theme.colors.main};
   border-radius: 9px;
   padding: 40px;
-  margin: 0;
   box-shadow: 1px 1px 10px #bdbdbd;
 
   & > a {
@@ -33,6 +32,10 @@ export const InnerContainer = styled(DefaultInnerContainer)`
     article + article {
       margin: 30px 0;
     }
+  }
+
+  @media ${({ theme }) => theme.media.mobile2} {
+    padding: 25px;
   }
 `;
 
@@ -83,6 +86,10 @@ export const ContentsContainer = styled.article`
   @media ${({ theme }) => theme.media.mobile2} {
     h1 {
       font-size: 1.5rem;
+    }
+
+    p {
+      line-height: 1.25;
     }
   }
 `;

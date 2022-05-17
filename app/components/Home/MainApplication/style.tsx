@@ -1,14 +1,14 @@
-import { DefaultInnerContainer } from 'components/InnerContainer/style';
+import { DefaultInnerContainer } from 'components/Container/style';
 import styled from 'styled-components';
 
 export const MainApplicationWrapper = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 50px 40px 100px 40px;
+  padding: 50px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 25px 20px 50px 20px;
+    padding: 25px 20px;
   }
 `;
 
@@ -29,6 +29,7 @@ export const InnerContainer = styled(DefaultInnerContainer)`
     text-align: center;
     margin: 30px 0;
     font-size: 1.75rem;
+    font-weight: bold;
     color: ${({ theme }) => theme.colors.main};
   }
 
@@ -54,10 +55,10 @@ export const ButtonContainer = styled.div`
   width: 500px;
 
   @media ${({ theme }) => theme.media.tablet} {
-    width: 400px;
+    width: 100%;
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
-    width: 350px;
+    width: 100%;
   }
 `;
