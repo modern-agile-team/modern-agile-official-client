@@ -7,11 +7,7 @@ import theme from 'styles/theme';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import dynamic from 'next/dynamic';
-
-const Layout = dynamic(() => import('components/Layout'), {
-  ssr: true,
-});
+import Layout from 'components/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

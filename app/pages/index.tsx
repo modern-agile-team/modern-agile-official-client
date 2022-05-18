@@ -1,3 +1,4 @@
+import React from 'react';
 import type { NextPage } from 'next';
 import Loading from 'components/Loading';
 import dynamic from 'next/dynamic';

@@ -1,3 +1,4 @@
+import React from 'react';
 import service from 'assets/lottie/service.gif';
 import cooperation from 'assets/lottie/cooperation.gif';
 import rocket from 'assets/lottie/rocket.gif';
