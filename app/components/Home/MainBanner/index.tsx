@@ -16,17 +16,19 @@ const MainBanner = () => {
     return 4;
   }, []);
 
-  const CarouselSettings = {
-    infinite: true,
-    slidesToShow: showCount,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 8000,
-    autoplaySpeed: -1,
-    cssEase: 'linear',
-    arrows: false,
-    draggable: false,
-  };
+  const CarouselSettings = useMemo(() => {
+    return {
+      infinite: true,
+      slidesToShow: showCount,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 8000,
+      autoplaySpeed: -1,
+      cssEase: 'linear',
+      arrows: false,
+      draggable: false,
+    };
+  }, [showCount]);
 
   return (
     <MainBannerWrapper>

@@ -19,7 +19,7 @@ const Accordion = ({ title, content }: Props) => {
     <AccordionWrapper>
       <AccordionButtonContainer onClick={handleToggle}>
         <p>{title}</p>
-        <span>{isOpenPanel ? '-' : '+'}</span>
+        <span>{isOpenPanel ? '▲' : '▼'}</span>
       </AccordionButtonContainer>
       <AccordionPanelContainer className={isOpenPanel ? 'active' : ''}>
         <p>{content}</p>
