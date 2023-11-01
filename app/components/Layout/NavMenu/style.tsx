@@ -15,11 +15,13 @@ export const NavMenuWrapper = styled.section`
   }
 
   li {
+    width: 100%;
     font-size: 1.25rem;
     font-weight: bold;
   }
 
   a {
+    display: block;
     color: #111;
 
     &:hover {

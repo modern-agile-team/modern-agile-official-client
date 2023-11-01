@@ -1,47 +1,46 @@
-import React, { useMemo } from 'react';
-import ArrowBottom from 'assets/arrow_bottom.svg';
+import React from 'react';
 import Carousel from 'components/Carousel';
 import {
   MainBannerWrapper,
   BannerTitleContainer,
-  IconContainer,
+  InnerContainer,
+  ImageContainer,
 } from './style';
 import { BannerCarouselData } from './bannerCarouselData';
 
 const MainBanner = () => {
-  const showCount = useMemo(() => {
-    if (window.innerWidth < 768) {
-      return 2;
-    }
-    return 4;
-  }, []);
-
-  const CarouselSettings = useMemo(() => {
-    return {
-      infinite: true,
-      slidesToShow: showCount,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 8000,
-      autoplaySpeed: -1,
-      cssEase: 'linear',
-      arrows: false,
-      draggable: false,
-    };
-  }, [showCount]);
+  const CarouselSettings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 1,
+    arrows: false,
+    draggable: true,
+  };
 
   return (
     <MainBannerWrapper>
-      <BannerTitleContainer>
-        <h1>MODERN AGILE</h1>
-        <p>모던 애자일은 개발자로서 핵심 역량을 기르고</p>
-        <p>IT 산업의 미래 인재로 성장합니다.</p>
-      </BannerTitleContainer>
-      <Carousel settings={CarouselSettings} list={BannerCarouselData} />
-
-      <IconContainer>
-        <ArrowBottom />
-      </IconContainer>
+      <InnerContainer>
+        <BannerTitleContainer>
+          <h1>MODERN AGILE</h1>
+          <p>
+            모던 애자일은 개발자로서 핵심 역량을 기르고
+            <br />
+            IT 산업의 미래 인재로 성장합니다.
+          </p>
+        </BannerTitleContainer>
+        <Carousel settings={CarouselSettings}>
+          {BannerCarouselData.map((item) => (
+            <ImageContainer key={item.id}>
+              <picture>
+                <source srcSet={item.webp} type="image/webp" />
+                <img src={item.src} alt={item.alt} />
+              </picture>
+            </ImageContainer>
+          ))}
+        </Carousel>
+      </InnerContainer>
     </MainBannerWrapper>
   );
 };

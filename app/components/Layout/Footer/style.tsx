@@ -4,12 +4,12 @@ import styled from 'styled-components';
 export const FooterWrapper = styled.footer`
   width: 100%;
   display: flex;
-  padding: 40px 40px 60px 40px;
+  padding: 40px 40px 40px 40px;
   justify-content: center;
   background-color: #f7f7f7;
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 40px 20px 60px 20px;
+    padding: 40px 20px 40px 20px;
   }
 `;
 

@@ -1,50 +1,44 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import Loading from 'components/Loading';
-import dynamic from 'next/dynamic';
+import MainLogo from 'assets/logo/main-logo.png';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
+import Loading from 'components/Loading';
 
-const MainBanner = dynamic(() => import('components/Home/MainBanner'), {
+const HomePage = dynamic(() => import('../components/Home'), {
   ssr: false,
   loading: () => <Loading />,
-});
-
-const MainValues = dynamic(() => import('components/Home/MainValues'), {
-  ssr: false,
-});
-
-const MainEmployment = dynamic(() => import('components/Home/MainEmployment'), {
-  ssr: false,
-});
-
-const MainActivity = dynamic(() => import('components/Home/MainActivity'), {
-  ssr: false,
-});
-
-const MainApplication = dynamic(
-  () => import('components/Home/MainApplication'),
-  {
-    ssr: false,
-  }
-);
-
-const MainFAQ = dynamic(() => import('components/Home/MainFAQ'), {
-  ssr: false,
 });
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Modern Agile</title>
-        <meta name="description" content="Modern Agile Official WebPage" />
+        <title>모던 애자일</title>
+        <meta name="description" content="모던 애자일 공식 사이트" />
+        <meta name="keywords" content="모던 애자일 공식 사이트" />
+        <meta
+          property="og:url"
+          content="https://modern-agile-official-client.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="모던 애자일 공식 사이트" />
+        <meta property="og:description" content="모던 애자일 공식 사이트" />
+        <meta property="og:image" content={MainLogo} />
+        <meta
+          property="twitter:url"
+          content="https://modern-agile-official-client.vercel.app/"
+        />
+        <meta property="twitter:type" content="website" />
+        <meta property="twitter:title" content="모던 애자일 공식 사이트" />
+        <meta
+          property="twitter:description"
+          content="모던 애자일 공식 사이트"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta property="twitter:image" content={MainLogo} />
       </Head>
-      <MainBanner />
-      <MainValues />
-      <MainEmployment />
-      <MainActivity />
-      <MainApplication />
-      <MainFAQ />
+      <HomePage />
     </>
   );
 };

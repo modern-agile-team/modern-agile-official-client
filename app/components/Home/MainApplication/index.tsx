@@ -13,16 +13,16 @@ const MainApplication = () => {
       <InnerContainer>
         <img src={logo} alt="모던애자일 로고" />
         <p>
-          모던 애자일이 추구하는 <span>가치와 방향성</span>을 <span>공감</span>
-          하고 함께 <span>성장</span>하고 싶은 사람을 찾습니다.
+          모던 애자일이 추구하는 <span>가치와 방향성</span>을 공감 하고
+          <span> 함께 성장</span>하고 싶은 사람을 찾습니다.
         </p>
         <ButtonContainer>
           <Button.Link
-            href="https://www.notion.so/SW-4-5c77fa1ec6a8459581388f4142458d24"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeHWMVWswRhCSzrBWtivbhP5aRJUnzWOn57aOKz1n9thBTy1Q/viewform"
             target="_blank"
             rel="noreferrer"
             variant="primary">
-            지원 하기
+            7기 지원 하기
           </Button.Link>
         </ButtonContainer>
       </InnerContainer>

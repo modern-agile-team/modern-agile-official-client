@@ -1,13 +1,28 @@
 import React from 'react';
-import { LoadingWrapper } from './style';
-import PaperAirplane from 'assets/lottie/paper-airplane.gif';
+import MainLogo from 'assets/logo/main-logo.png';
 
 const Loading = () => {
   return (
-    <LoadingWrapper>
-      <h1>로딩중입니다</h1>
-      <img src={PaperAirplane} alt="로딩중" width={200} />
-    </LoadingWrapper>
+    <div
+      style={{
+        width: '100%',
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+      <img
+        src={MainLogo}
+        alt="로딩중"
+        width={200}
+        style={{
+          width: '80px',
+          borderRadius: '9px',
+          boxShadow: '1px 1px 3px #bdbdbd',
+        }}
+      />
+    </div>
   );
 };
 

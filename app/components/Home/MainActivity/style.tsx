@@ -6,15 +6,19 @@ export const MainActivityWrapper = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 50px 40px;
+  padding: 100px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 25px 20px;
+    padding: 50px 0px;
   }
 `;
 
+export const TitleContainer = styled(DefaultInnerContainer)`
+  display: flex;
+  justify-content: center;
+`;
+
 export const InnerContainer = styled(DefaultInnerContainer)`
-  padding: 0 40px;
   opacity: 0;
 
   & + & {
@@ -26,7 +30,6 @@ export const InnerContainer = styled(DefaultInnerContainer)`
   }
 
   @media ${({ theme }) => theme.media.tablet} {
-    padding: 0px;
     flex-direction: column;
 
     section + section {
@@ -47,14 +50,15 @@ export const ContentsContainer = styled.section`
 
   img {
     width: 350px;
+    height: 350px;
   }
 
   p {
     line-height: 1.3;
-    padding: 0 60px;
-    font-size: 1.5rem;
+    padding: 0 20px;
+    font-size: 1.35rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     margin: auto 0;
   }
 
@@ -62,9 +66,16 @@ export const ContentsContainer = styled.section`
     color: #996b41;
   }
 
+  @media ${({ theme }) => theme.media.tablet} {
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
   @media ${({ theme }) => theme.media.mobile2} {
     img {
       width: 250px;
+      height: 250px;
     }
     p {
       padding: 0;

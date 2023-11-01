@@ -18,6 +18,7 @@ export const AccordionButtonContainer = styled.div`
     text-align: start;
     font-size: 1.3rem;
     color: #fff;
+    max-width: 90%;
   }
 
   span {
@@ -35,6 +36,11 @@ export const AccordionButtonContainer = styled.div`
     p {
       font-size: 1rem;
     }
+
+    span {
+      font-size: 0.75rem;
+      color: #fff;
+    }
   }
 `;
 
@@ -43,6 +49,7 @@ export const AccordionPanelContainer = styled.div`
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   max-height: 0;
+  white-space: pre-wrap;
 
   p {
     color: ${({ theme }) => theme.colors.main};
@@ -57,7 +64,7 @@ export const AccordionPanelContainer = styled.div`
   @media ${({ theme }) => theme.media.mobile2} {
     p {
       padding: 10px 20px;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
 `;

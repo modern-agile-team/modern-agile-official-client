@@ -4,6 +4,7 @@ import { BoxWrapper, BoxEmploymentWrapper } from './style';
 interface Props {
   title?: string;
   desc?: string;
+  src?: string;
 }
 const Box = ({ title = '', desc = '' }: Props) => {
   return (
@@ -14,11 +15,16 @@ const Box = ({ title = '', desc = '' }: Props) => {
   );
 };
 
-Box.Employment = ({ title = '', desc = '' }: Props) => {
+Box.Employment = ({ title = '', desc = '', src = '' }: Props) => {
   return (
     <BoxEmploymentWrapper>
-      <h3>{title}</h3>
-      <p>{desc}</p>
+      <div>
+        <h3>{title}</h3>
+        <p>{desc}</p>
+      </div>
+      <a href={src} target="_blank" rel="noreferrer">
+        〉
+      </a>
     </BoxEmploymentWrapper>
   );
 };

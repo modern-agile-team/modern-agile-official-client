@@ -13,10 +13,7 @@ const MainEmployment = () => {
     <MainEmploymentWrapper>
       <InnerContainer>
         <ContentsContainer>
-          <h1>
-            모던 애자일 수료생들은 현재 주요 IT 서비스 기업에서 활동하고
-            있습니다.
-          </h1>
+          <h2>모던 애자일 수료생들은 주요 IT 기업에서 활동하고 있습니다.</h2>
 
           <Button.Link
             href="https://www.notion.so/e2fbcb54728d4ecf9014b246173f8d28"
@@ -27,7 +24,12 @@ const MainEmployment = () => {
         </ContentsContainer>
         <ContentsContainer>
           {mainEmploymentData.map((item) => (
-            <Box.Employment key={item.id} title={item.title} desc={item.desc} />
+            <Box.Employment
+              key={item.id}
+              title={item.title}
+              desc={item.desc}
+              src={item.src}
+            />
           ))}
         </ContentsContainer>
         <Button.Link

@@ -5,10 +5,10 @@ export const MainFAQWrapper = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 50px 40px 100px 40px;
+  padding: 100px 40px;
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 25px 20px 50px 20px;
+    padding: 50px 20px;
   }
 `;
 
@@ -37,7 +37,7 @@ export const InnerContainer = styled(DefaultInnerContainer)`
   }
 
   @media ${({ theme }) => theme.media.mobile2} {
-    padding: 25px;
+    padding: 15px;
 
     h1 {
       font-size: 1.5rem;
