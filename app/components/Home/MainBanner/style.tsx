@@ -91,7 +91,6 @@ export const IconContainer = styled.div`
 export const ImageContainer = styled.div`
   width: 100%;
   height: 400px;
-  max-width: 768px;
   position: relative;
   border-radius: 9px;
   overflow: hidden;
@@ -103,7 +102,6 @@ export const ImageContainer = styled.div`
     img {
       width: 100%;
       height: 400px;
-      max-width: 768px;
       object-fit: cover;
     }
   }

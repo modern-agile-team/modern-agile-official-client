@@ -4,6 +4,7 @@ export const CarouselWrapper = styled.section`
   margin-top: 40px;
   padding: 0 40px;
   width: 100%;
+  max-width: 70%;
 
   .slick-list {
     margin: 0 -10px;
@@ -27,6 +28,7 @@ export const CarouselWrapper = styled.section`
 
   @media ${({ theme }) => theme.media.tablet} {
     padding: 0;
+    max-width: 100%;
 
     .slick-list {
       margin: 0;

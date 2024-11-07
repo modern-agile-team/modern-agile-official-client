@@ -11,10 +11,10 @@ const wrappingNavData = [
     id: 1,
     element: (
       <a
-        href="https://catnip-echium-964.notion.site/47db9e76382f4cc3a4d9b9bfd968d046"
+        href="https://www.notion.so/fd6db65ba08946e5afabedccd07ed772"
         target={'_blank'}
         rel="noreferrer">
-        7기 팀원 소개
+        8기 팀원 소개
       </a>
     ),
   },
@@ -22,10 +22,10 @@ const wrappingNavData = [
     id: 2,
     element: (
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSe5Qm2Cqc564JJy8gE6QjDWZK957QDWSdMayGdNia5BC0EpZA/viewform?usp=sf_link"
+        href="https://forms.gle/Dee2ab6PxMjvGT9p7"
         target={'_blank'}
         rel="noreferrer">
-        8기 지원하기
+        9기 지원하기
       </a>
     ),
   },
@@ -33,7 +33,7 @@ const wrappingNavData = [
     id: 3,
     element: (
       <a
-        href="https://open.kakao.com/o/gWx62hog"
+        href="https://open.kakao.com/o/gVKzOMYg"
         target={'_blank'}
         rel="noreferrer">
         문의하기
